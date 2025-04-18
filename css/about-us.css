@@ -1,0 +1,394 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+}
+
+nav {
+  height: 150px;
+  background-color: rgba(33, 28, 132, 0.9);
+  margin-bottom: 50px;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 10px;
+}
+
+.nav-ul li {
+  font-family: Arial;
+  text-decoration: none;
+  list-style: none;
+  font-size: 13px;
+}
+
+.nv-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0px;
+}
+
+.nv-link:hover {
+  color: #00ebe7;
+  transition: 0.2s;
+}
+
+.nv-link:active {
+  color: #00ebe7;
+}
+
+nav a.active {
+  position: relative;
+  color: #00ebe7;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #00ebe7;
+  border-radius: 2px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section Titles */
+main h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #211c84;
+  text-align: center;
+}
+
+/* Intro Section */
+.intro-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+  color: black;
+}
+
+/* Mission & Vision Cards */
+.mission-vision {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: #0cdf92;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  color: #fff;
+}
+.card i {
+  font-size: 2rem;
+  color: #004e92;
+  margin-bottom: 10px;
+}
+.card h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Values Section */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  background: transparent;
+}
+.value-item {
+  background: #0cdf92;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.value-item i {
+  font-size: 2rem;
+  color: #004e92;
+  margin-bottom: 10px;
+}
+
+/* Why Choose Us */
+.usp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+.usp-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: black;
+}
+.usp-icon i {
+  font-size: 2rem;
+  color: black;
+}
+.usp-content h3 {
+  margin-bottom: 5px;
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 30px 30px;
+}
+.team-member {
+  background: #0cdf92;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+.team-member:hover {
+  background: #0cdf92;
+  transform: scale(1.02);
+  border-radius: 15px;
+}
+.section-intro {
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.member-photo img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.member-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+.position {
+  font-style: italic;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+.bio,
+.member-info > p {
+  font-size: 0.95rem;
+  color: #fff;
+}
+.expertise span {
+  display: inline-block;
+  background: linear-gradient(to right, #028958, #0cdf92, #07ab6f);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin: 5px 4px;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #004e92;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta-section h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.cta-buttons {
+  margin-top: 20px;
+}
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  margin: 10px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary {
+  background: white;
+  color: #004e92;
+}
+.btn-primary:hover {
+  background: #e0e0e0;
+}
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* footer */
+
+footer {
+  height: 550px;
+  background-color: #211c84;
+  margin-top: 120px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-main-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-main-flex {
+  padding-top: 80px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+}
+
+.footer-flex-h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Poppins", sans-serif;
+  font-weight: 100px;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.footer-main-flex ul {
+  list-style: none;
+}
+
+.footer-main-flex li {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.footer-flex-f-li {
+  padding-top: 20px !important;
+}
+
+.footer-logo {
+  width: 160px;
+  padding-left: 30px;
+  margin-top: -20px;
+}
+
+.footer-logo-phone {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-logo-phone span {
+  font-size: 21x;
+}
+
+.footer-phone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.font-awesome-footer {
+  color: white;
+  font-size: 15px;
+}
+
+.footer-email {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  gap: 15px;
+}
+
+.footer-p1 {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: arial;
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.footer-hr {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 2px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.copyright-design {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.footer-blackarea {
+  background-color: black;
+  height: 150px;
+}
+
+.footer-p2 {
+  color: white;
+  font-family: arial;
+  font-size: 16px;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+}
+
+.footer-btn {
+  padding: 10px 20px;
+  background-color: #00ebe7;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background-color: #6af3f0;
+}
+
+.footer-btn-link:link {
+  padding-left: 40px;
+}

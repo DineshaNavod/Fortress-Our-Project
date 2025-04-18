@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expencess | Fortree Asset Management</title>
+    <link rel="stylesheet" href="../css/dashboard-expenses.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="shortcut icon" href="../img/tab-icon.png" type="x-icon" />
+
+    <!-- Import Ionic Icons -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- import google Text -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script/massage.js"></script>
+  </head>
+  <body>
+    <!-- create navigation bar -->
+    <header>
+      <nav>
+        <center>
+          <img
+            src="../img/Logo.png"
+            alt="Foretess Brand Logo"
+            width="100px"
+            height="auto"
+            id="logo"
+          />
+
+          <!-- Links -->
+          <ul class="nav-ul">
+            <li><a href="../index.html" class="nv-link">HOME</a></li>
+            <li>
+              <a href="../pages/Service.html" class="nv-link">SERVICES</a>
+            </li>
+            <li>
+              <a href="../pages/Dashboard-main-page.html" class="nv-link"
+                >DASHBOARD</a
+              >
+            </li>
+            <li>
+              <a href="../pages/contact.html" class="nv-link">CONTACT US</a>
+            </li>
+            <li>
+              <a href="../pages/about as.html" class="nv-link">ABOUT US</a>
+            </li>
+          </ul>
+        </center>
+      </nav>
+    </header>
+
+    <!-- End The Header Section Here -->
+
+    <div class="container">
+      <div class="nagativation-vertical-bar">
+        <div class="horizental-blank-space"></div>
+        <div class="flex-inside-nav">
+          <!-- Blank Area -->
+
+          <div class="blank-space"></div>
+
+          <!-- Navigation Linked Add  -->
+
+          <ul class="nav-links">
+            <li>
+              <a href="./Dashboard-main-page.html">
+                <span class="icon"
+                  ><ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="title">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="./income_vs_expenses.html">
+                <span class="icon"
+                  ><ion-icon name="cash-outline"></ion-icon
+                ></span>
+                <span class="title">Income VS Expenses</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/expenses.html">
+                <span class="icon"
+                  ><ion-icon name="pie-chart-outline"></ion-icon
+                ></span>
+                <span class="title">Expenses</span>
+              </a>
+            </li>
+            <li>
+              <a href="./goal2.html">
+                <span class="icon"
+                  ><ion-icon name="golf-outline"></ion-icon
+                ></span>
+                <span class="title">Goal</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="massage()">
+                <span class="icon"
+                  ><ion-icon name="chatbubble-outline"></ion-icon
+                ></span>
+                <span class="title">Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/Privacy policy.html">
+                <span class="icon"
+                  ><ion-icon name="help-outline"></ion-icon
+                ></span>
+                <span class="title">Help</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="seting()">
+                <span class="icon"
+                  ><ion-icon name="settings-outline"></ion-icon
+                ></span>
+                <span class="title">Setting</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/forgot.html">
+                <span class="icon"
+                  ><ion-icon name="lock-closed-outline"></ion-icon
+                ></span>
+                <span class="title">Password</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/sign up.html">
+                <span class="icon"
+                  ><ion-icon name="exit-outline"></ion-icon
+                ></span>
+                <span class="title">Sign Out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- White Space Here -->
+
+      <div class="white-page">
+        <div class="welcome-flex">
+          <!-- Welcome Text  -->
+
+          <div class="wellcome-text">
+            <h3 class="wellcome-text-h3">Welcome to Fortress</h3>
+            <p class="wellcome-text-p">Hi,DanielPowel. Welcome Back</p>
+          </div>
+
+          <!-- Logo And Others -->
+
+          <div class="logo-users">
+            <img src="../img/share-icon.png" alt="share" class="share-icon" />
+            <img
+              src="../img/notification-icon.png"
+              alt="Notification"
+              class="share-icon"
+            />
+            <img src="../img/user.png" alt="Logo" class="share-icon" />
+          </div>
+        </div>
+        <!-- Start Here Guys  -->
+
+        <div class="top-container">
+          <div class="budget-section">
+            <h3 class="budget-section-text">Set Budget:</h3>
+            <br />
+            <input
+              type="number"
+              id="budgetAmount"
+              placeholder="Enter your budget"
+            />
+          </div>
+
+          <div class="input-section">
+            <h3 class="budget-section-text input">Set Budget:</h3>
+            <!-- <label for="expenseName" class="expense-Name">Expense Name:</label>
+            <input type="text" id="expenseName" placeholder="Expense Name" /> -->
+
+            <label
+              for="expenseCategory"
+              style="margin-right: 40px; padding-left: 30px"
+              >Category:</label
+            >
+            <select id="expenseCategory">
+              <option value="Food">Food</option>
+              <option value="Transport">Transport</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Shopping">Shopping</option>
+              <option value="Other">Other</option></select
+            ><br />
+
+            <label for="expenseValue" class="expense-Name"
+              >Expense Value:</label
+            >
+            <input
+              type="number"
+              id="expenseValue"
+              placeholder="Expense Value"
+            />
+
+            <div></div>
+            <div></div>
+            <button onclick="addExpense()" class="Expenses-btn">
+              Add Expense
+            </button>
+          </div>
+        </div>
+
+        <ul class="tracker-list" id="expenseList"></ul>
+
+        <p id="emptyMessage" class="empty-message" style="display: none">
+          No expenses tracked yet.
+        </p>
+
+        <div id="balanceSection" class="balance-section">
+          Balance: <span id="balanceAmount" class="balance-neutral">0</span>
+        </div>
+
+        <!-- Pie Chart Add here  -->
+
+        <div class="pie-chart">
+          <div id="chartContainer">
+            <canvas id="expensePieChart"></canvas>
+          </div>
+        </div>
+
+        <button id="reset-app" class="submit" style="margin-top: 20px">
+          Reset App
+        </button>
+
+        <!-- End HEre Guys  -->
+      </div>
+    </div>
+
+    <!-- Footer create -->
+
+    <!-- Footer Flex Section -->
+    <footer>
+      <div class="footer-main-flex">
+        <div class="footer-flex1">
+          <ul>
+            <h3 class="footer-flex-h3">MAIN MENU</h3>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../index.html">Home</a>
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Service.html"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/about as.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/sign up.html"
+                >Become a Client</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-flex2">
+          <ul>
+            <h3 class="footer-flex-h3">LEGALS</h3>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Policies</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Service.html"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Fair Customer Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-flex3">
+          <ul>
+            <h3 class="footer-flex-h3">WEBSITE</h3>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Website Terms</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Cookies</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-flex4">
+          <img src="../img/Logo.png" alt="Logo" class="footer-logo" />
+
+          <div class="footer-phone">
+            <span class="font-awesome-footer"
+              ><i class="fa-solid fa-phone"></i
+            ></span>
+            <p class="footer-logo-phone">Phone: +1 (123) 456-7890</p>
+          </div>
+
+          <div class="footer-email">
+            <span class="font-awesome-footer"
+              ><i class="fa-solid fa-envelope"></i
+            ></span>
+            <p class="footer-logo-phone">Email: support@yourcompany.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pargraph Under The Flex Section  -->
+
+      <p class="footer-p1">
+        Fortress Asset Management is dedicated to helping you take control of
+        your finances with security and ease. Our innovative platform empowers
+        you to track, manage, and grow your wealth confidently.
+      </p>
+      <hr class="footer-hr" />
+      <div class="copyright-design">
+        <h3 style="color: rgba(255, 255, 255, 0.8); font-size: 12px">
+          Copyright @2025 By FORTRESS
+        </h3>
+        <h3 style="color: rgba(255, 255, 255, 0.6); font-size: 12px">
+          Design by FORTRESS TEAM
+        </h3>
+      </div>
+      <div class="footer-blackarea">
+        <p class="footer-p2" style="font-size: 12px">
+          Partner with Fortress and turn your financial goals into reality<font
+            style="color: #00ebe7"
+            >—together, success is limitless!</font
+          >
+        </p>
+        <a href="../pages/Privacy policy.html" class="footer-btn-link"
+          ><button class="footer-btn" style="font-size: 12px">
+            <i class="fa-solid fa-circle-check"></i>&nbsp CHECK PRIVARCY
+            POLICIES
+          </button></a
+        >
+      </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

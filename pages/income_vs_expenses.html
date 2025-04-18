@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income vs Expenses | Fortree Asset Management</title>
+    <link rel="stylesheet" href="../css/dashboard-income_vs_expenses.css" />
+    <!-- Import column chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Impot line chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+    <style>
+      .mylinechart {
+        max-width: 200px;
+        margin: 20px auto;
+        display: block;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+
+    <!-- Import Ionic Icons -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- import google Text -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../img/tab-icon.png" type="x-icon" />
+    <script src="../script/massage.js"></script>
+  </head>
+  <body>
+    <!-- create navigation bar -->
+    <header>
+      <nav>
+        <center>
+          <img
+            src="../img/Logo.png"
+            alt="Foretess Brand Logo"
+            width="100px"
+            height="auto"
+            id="logo"
+          />
+
+          <!-- Links -->
+          <ul class="nav-ul">
+            <li><a href="../index.html" class="nv-link">HOME</a></li>
+            <li>
+              <a href="../pages/Service.html" class="nv-link">SERVICES</a>
+            </li>
+            <li>
+              <a href="../pages/Dashboard-main-page.html" class="nv-link"
+                >DASHBOARD</a
+              >
+            </li>
+            <li>
+              <a href="../pages/contact.html" class="nv-link">CONTACT US</a>
+            </li>
+            <li>
+              <a href="../pages/about as.html" class="nv-link">ABOUT US</a>
+            </li>
+          </ul>
+        </center>
+      </nav>
+    </header>
+
+    <!-- End The Header Section Here -->
+
+    <div class="container">
+      <div class="nagativation-vertical-bar">
+        <div class="horizental-blank-space"></div>
+        <div class="flex-inside-nav">
+          <!-- Blank Area -->
+
+          <div class="blank-space"></div>
+
+          <!-- Navigation Linked Add  -->
+
+          <ul class="nav-links">
+            <li>
+              <a href="./Dashboard-main-page.html">
+                <span class="icon"
+                  ><ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="title">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/income_vs_expenses.html">
+                <span class="icon"
+                  ><ion-icon name="cash-outline"></ion-icon
+                ></span>
+                <span class="title">Income VS Expenses</span>
+              </a>
+            </li>
+            <li>
+              <a href="./expenses.html">
+                <span class="icon"
+                  ><ion-icon name="pie-chart-outline"></ion-icon
+                ></span>
+                <span class="title">Expenses</span>
+              </a>
+            </li>
+            <li>
+              <a href="./goal2.html">
+                <span class="icon"
+                  ><ion-icon name="golf-outline"></ion-icon
+                ></span>
+                <span class="title">Goal</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="massage()">
+                <span class="icon"
+                  ><ion-icon name="chatbubble-outline"></ion-icon
+                ></span>
+                <span class="title">Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/Privacy policy.html">
+                <span class="icon"
+                  ><ion-icon name="help-outline"></ion-icon
+                ></span>
+                <span class="title">Help</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="seting()">
+                <span class="icon"
+                  ><ion-icon name="settings-outline"></ion-icon
+                ></span>
+                <span class="title">Setting</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/forgot.html">
+                <span class="icon"
+                  ><ion-icon name="lock-closed-outline"></ion-icon
+                ></span>
+                <span class="title">Password</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/sign up.html">
+                <span class="icon"
+                  ><ion-icon name="exit-outline"></ion-icon
+                ></span>
+                <span class="title">Sign Out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- White Space Here -->
+
+      <div class="white-page">
+        <div class="welcome-flex">
+          <!-- Welcome Text  -->
+
+          <div class="wellcome-text">
+            <h3 class="wellcome-text-h3">Welcome to Fortress</h3>
+            <p class="wellcome-text-p">Hi,DanielPowel. Welcome Back</p>
+          </div>
+
+          <!-- Logo And Others -->
+
+          <div class="logo-users">
+            <img src="../img/share-icon.png" alt="share" class="share-icon" />
+            <img
+              src="../img/notification-icon.png"
+              alt="Notification"
+              class="share-icon"
+            />
+            <img src="../img/user.png" alt="Logo" class="share-icon" />
+          </div>
+        </div>
+
+        <!-- starts -->
+        <div class="invex-main-contain">
+          <div class="invex-fianacial-tracker">
+            <font class="invex-fianacial-tracker-font"> Financial Tracker</font>
+            <hr class="invex-financial-tracker-hr" />
+          </div>
+          <div class="invex-income-vs-expenses">
+            <h1 class="invex-income-vs-expenses-h1">INCOME vs EXPENSES:</h1>
+          </div>
+          <div class="invex-column-main">
+            <div class="invex-column-chart-main">
+              <div class="invex-column-chart">
+                <canvas id="myColumnChart" class="myColumnChart"></canvas>
+                <script>
+                  const ctx = document
+                    .getElementById("myColumnChart")
+                    .getContext("2d");
+                  const myChart = new Chart(ctx, {
+                    type: "bar",
+                    data: {
+                      labels: ["2020", "2021", "2022", "2023", "2024"],
+                      datasets: [
+                        {
+                          label: "Income",
+                          data: [1200, 1900, 300, 500, 2000],
+                          backgroundColor: "rgba(33, 28, 132, 0.9)",
+                        },
+                        {
+                          label: "Expense",
+                          data: [800, 1500, 1000, 700, 1500],
+                          backgroundColor: "rgba(117, 180, 222, 0.8)",
+                        },
+                      ],
+                    },
+                    options: {
+                      scales: {
+                        y: {
+                          beginAtZero: true,
+                          title: {
+                            display: true,
+                            text: "Amount in USD ($)",
+                          },
+                        },
+                        x: {
+                          title: {
+                            display: true,
+                            text: "",
+                          },
+                        },
+                      },
+                      plugins: {
+                        title: {
+                          display: true,
+                          text: "Categorized Income and Expense Comparison",
+                          font: {
+                            size: 16,
+                          },
+                        },
+                        legend: {
+                          display: true,
+                          position: "top",
+                        },
+                      },
+                    },
+                  });
+                </script>
+                <div class="invex-column-paragraph">
+                  This column chart visually compares income and expenses over
+                  the period of 2020 to 2024, allowing for a clear year-by-year
+                  analysis of financial performance.
+                </div>
+              </div>
+            </div>
+            <div class="invex-column-chart-discription">
+              <div class="invex-income-main">
+                <div class="invex-income">
+                  Toatal Income<br />
+                  <h1 class="invex-income-h1">$1,000</h1>
+                </div>
+                <div class="invex-expenses">
+                  Toatal Expense<br />
+                  <h1 class="invex-expenses-h1">$1,000</h1>
+                </div>
+              </div>
+              <div class="invex-netincome">
+                <div class="chart-container">
+                  <canvas id="myLineChart"></canvas>
+                </div>
+                <script>
+                  const ctxLine = document
+                    .getElementById("myLineChart")
+                    .getContext("2d");
+                  const myLineChart = new Chart(ctxLine, {
+                    type: "line",
+                    data: {
+                      labels: ["2020", "2021", "2022", "2023", "2024"],
+                      datasets: [
+                        {
+                          label: "Income",
+                          data: [1200, 1900, 300, 500, 2000],
+                          borderColor: "rgba(33, 28, 132, 0.9)",
+                          backgroundColor: "rgba(33, 28, 132, 0.9)",
+                          borderWidth: 2,
+                          pointRadius: 5,
+                          pointBackgroundColor: "rgba(33, 28, 132, 0.9)",
+                          pointBorderColor: "#fff",
+                          pointBorderWidth: 1,
+                          datalabels: {
+                            align: "top",
+                            offset: 5,
+                            color: "black",
+                            formatter: function (value, context) {
+                              return "A: " + value;
+                            },
+                          },
+                        },
+                        {
+                          label: "Expenses",
+                          data: [800, 1500, 1000, 700, 1500],
+                          borderColor: "rgba(117, 180, 222, 0.8)",
+                          backgroundColor: "rgba(117, 180, 222, 0.8)",
+                          borderWidth: 2,
+                          pointRadius: 5,
+                          pointBackgroundColor: "rgba(117, 180, 222, 0.8)",
+                          pointBorderColor: "#fff",
+                          pointBorderWidth: 1,
+                          datalabels: {
+                            align: "bottom",
+                            offset: 5,
+                            color: "black",
+                            formatter: function (value, context) {
+                              return "B: " + value;
+                            },
+                          },
+                        },
+                      ],
+                    },
+                    options: {
+                      responsive: true,
+                      scales: {
+                        y: {
+                          beginAtZero: true,
+                          title: {
+                            display: true,
+                            text: "Amount ($)",
+                          },
+                        },
+                        x: {
+                          title: {
+                            display: true,
+                            text: "",
+                          },
+                        },
+                      },
+                      plugins: {
+                        title: {
+                          display: true,
+                          text: "Tracking Income and Expense Patterns",
+                          font: {
+                            size: 16,
+                          },
+                        },
+                        legend: {
+                          display: true,
+                          position: "top",
+                        },
+                        datalabels: {
+                          display: true,
+                        },
+                      },
+                    },
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer create -->
+
+    <!-- Footer Flex Section -->
+    <footer>
+      <div class="footer-main-flex">
+        <div class="footer-flex1">
+          <ul>
+            <h3 class="footer-flex-h3">MAIN MENU</h3>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../index.html">Home</a>
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Service.html"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/about as.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/sign up.html"
+                >Become a Client</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-flex2">
+          <ul>
+            <h3 class="footer-flex-h3">LEGALS</h3>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Policies</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Service.html"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Fair Customer Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-flex3">
+          <ul>
+            <h3 class="footer-flex-h3">WEBSITE</h3>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Website Terms</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Cookies</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-flex4">
+          <img src="../img/Logo.png" alt="Logo" class="footer-logo" />
+
+          <div class="footer-phone">
+            <span class="font-awesome-footer"
+              ><i class="fa-solid fa-phone"></i
+            ></span>
+            <p class="footer-logo-phone">Phone: +1 (123) 456-7890</p>
+          </div>
+
+          <div class="footer-email">
+            <span class="font-awesome-footer"
+              ><i class="fa-solid fa-envelope"></i
+            ></span>
+            <p class="footer-logo-phone">Email: support@yourcompany.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pargraph Under The Flex Section  -->
+
+      <p class="footer-p1">
+        Fortress Asset Management is dedicated to helping you take control of
+        your finances with security and ease. Our innovative platform empowers
+        you to track, manage, and grow your wealth confidently.
+      </p>
+      <hr class="footer-hr" />
+      <div class="copyright-design">
+        <h3 style="color: rgba(255, 255, 255, 0.8); font-size: 12px">
+          Copyright @2025 By FORTRESS
+        </h3>
+        <h3 style="color: rgba(255, 255, 255, 0.6); font-size: 12px">
+          Design by FORTRESS TEAM
+        </h3>
+      </div>
+      <div class="footer-blackarea">
+        <p class="footer-p2" style="font-size: 12px">
+          Partner with Fortress and turn your financial goals into reality<font
+            style="color: #00ebe7"
+            >—together, success is limitless!</font
+          >
+        </p>
+        <a href="../pages/Privacy policy.html" class="footer-btn-link"
+          ><button class="footer-btn" style="font-size: 12px">
+            <i class="fa-solid fa-circle-check"></i>&nbsp CHECK PRIVARCY
+            POLICIES
+          </button></a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

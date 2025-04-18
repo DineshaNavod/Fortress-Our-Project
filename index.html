@@ -21,7 +21,7 @@
 
     <!-- Add tittle and icon -->
 
-    <link rel="stylesheet" href="./CSS Files/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="shortcut icon" href="./img/tab-icon.png" type="x-icon" />
 
     <!-- Add ionic icons -->
@@ -33,28 +33,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./script/nav-a.js"></script>
   </head>
   <body>
     <!-- create navigation bar -->
     <header>
       <nav>
         <center>
-          <a href="./index.html"
-            ><img
-              src="./img/Logo.png"
-              alt="Foretess Brand Logo"
-              width="100px"
-              height="auto"
-              id="logo"
-          /></a>
+          <img
+            src="./img/Logo.png"
+            alt="Foretess Brand Logo"
+            width="100px"
+            height="auto"
+            id="logo"
+          />
 
           <!-- Links -->
           <ul class="nav-ul">
-            <li><a href="#" class="nv-link">HOME</a></li>
-            <li><a href="#" class="nv-link">SERVICES</a></li>
-            <li><a href="#" class="nv-link">DASHBOARD</a></li>
-            <li><a href="#" class="nv-link">CONTACT US</a></li>
-            <li><a href="#" class="nv-link">ABOUT US</a></li>
+            <li><a href="./index.html" class="nv-link">HOME</a></li>
+            <li>
+              <a href="./pages/Service.html" class="nv-link">SERVICES</a>
+            </li>
+            <li>
+              <a href="./pages/Dashboard-main-page.html" class="nv-link"
+                >DASHBOARD</a
+              >
+            </li>
+            <li>
+              <a href="./pages/contact.html" class="nv-link">CONTACT US</a>
+            </li>
+            <li>
+              <a href="./pages/about as.html" class="nv-link">ABOUT US</a>
+            </li>
           </ul>
         </center>
       </nav>
@@ -73,7 +83,7 @@
       </p>
       <center>
         <button class="btn">
-          <a href="#" class="btn-link">CREATE AN ACCOUNT</a>
+          <a href="./pages/Service.html" class="btn-link">CREATE AN ACCOUNT</a>
         </button>
       </center>
     </header>
@@ -91,7 +101,9 @@
           protected at all times.Take control of your financial future with ease
           and confidence.
         </p>
-        <a href="#"><button>Explore Our Products &#8680;</button></a>
+        <a href="./pages/Service.html"
+          ><button>Explore Our Products &#8680;</button></a
+        >
       </div>
 
       <div class="demo"></div>
@@ -119,19 +131,22 @@
             top-tier security.
           </p>
           <center>
-            <a href="#"><button>PRIVERCY POLICIES</button></a>
+            <a href="./pages/Privacy policy.html"
+              ><button>PRIVERCY POLICIES</button></a
+            >
           </center>
 
           <!-- Images Number 2 -->
         </div>
         <div class="img-2">
-          <h3>ASSESTS</h3>
+          <h3>ASSETS</h3>
           <p class="flex-img-p">
-            Fortress Asset Management ensures your finances are protected with
-            top-tier security.
+            Project Fortress safeguards users' financial assets by implementing
+            secure data handling and protection measures against unauthorized
+            access
           </p>
           <center>
-            <a href="#"><button>EXPENNSES</button></a>
+            <a href="./pages/expenses.html"><button>EXPENNSES</button></a>
           </center>
         </div>
 
@@ -140,11 +155,13 @@
         <div class="img-3">
           <h3>OVERVIEW</h3>
           <p class="flex-img-p">
-            Fortress Asset Management ensures your finances are protected with
-            top-tier security.
+            Fortress project is a simpla and secure financial tracker designed
+            to help users manage.
           </p>
           <center>
-            <a href="#"><button>OVERVIEW</button></a>
+            <a href="./pages/Dashboard-main-page.html"
+              ><button>OVERVIEW</button></a
+            >
           </center>
         </div>
       </div>
@@ -230,12 +247,13 @@
       <div class="save-money-text">
         <h2 class="save-money-h2">SAVE MONEY</h2>
         <hr class="save-money-hr" />
-        <p class="save-money-p">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br />do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas<br />
-          accumsan lacus vel facilisis.
+        <p class="save-money-p" style="font-size: 15px; margin-top: -10px">
+          Project Fortress helps users develop better saving habits<br />
+          by tracking income and expenses in real time. It provides
+          <br />insights into spending patterns, allowing users to identify
+          areas<br />
+          where they can cut costs. With smart budgeting tools, users can set<br />
+          goals and stay motivated to grow their savings.
         </p>
       </div>
       <img
@@ -253,31 +271,69 @@
         <div class="footer-flex1">
           <ul>
             <h3 class="footer-flex-h3">MAIN MENU</h3>
-            <li class="footer-flex-f-li">&#10148;&nbsp;&nbsp;&nbsp;Home</li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;Our Services</li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;About Us</li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;Contact Us</li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;Become a Client</li>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./index.html">Home</a>
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/Service.html"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/about as.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/sign up.html"
+                >Become a Client</a
+              >
+            </li>
           </ul>
         </div>
         <div class="footer-flex2">
           <ul>
             <h3 class="footer-flex-h3">LEGALS</h3>
-            <li class="footer-flex-f-li">&#10148;&nbsp;&nbsp;&nbsp;Policies</li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;Terms of Service</li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;Fair Customer Policy</li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;Conflict of Interest Policy</li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;Best Execution Policy</li>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/Privacy policy.html"
+                >Policies</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/Service.html"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/Privacy policy.html"
+                >Fair Customer Policy</a
+              >
+            </li>
           </ul>
         </div>
         <div class="footer-flex3">
           <ul>
             <h3 class="footer-flex-h3">WEBSITE</h3>
             <li class="footer-flex-f-li">
-              &#10148;&nbsp;&nbsp;&nbsp;Website Terms
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/Privacy policy.html"
+                >Website Terms</a
+              >
             </li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;Privacy Policy</li>
-            <li>&#10148;&nbsp;&nbsp;&nbsp;Cookies</li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/Privacy policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="./pages/Privacy policy.html"
+                >Cookies</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -309,22 +365,22 @@
       </p>
       <hr class="footer-hr" />
       <div class="copyright-design">
-        <h3 style="color: rgba(255, 255, 255, 0.8)">
+        <h3 style="color: rgba(255, 255, 255, 0.8); font-size: 12px">
           Copyright @2025 By FORTRESS
         </h3>
-        <h3 style="color: rgba(255, 255, 255, 0.6); font-family: 12px">
+        <h3 style="color: rgba(255, 255, 255, 0.6); font-size: 12px">
           Design by FORTRESS TEAM
         </h3>
       </div>
       <div class="footer-blackarea">
-        <p class="footer-p2">
+        <p class="footer-p2" style="font-size: 12px">
           Partner with Fortress and turn your financial goals into reality<font
             style="color: #00ebe7"
             >—together, success is limitless!</font
           >
         </p>
-        <a href="#" class="footer-btn-link"
-          ><button class="footer-btn">
+        <a href="./pages/Privacy policy.html" class="footer-btn-link"
+          ><button class="footer-btn" style="font-size: 12px">
             <i class="fa-solid fa-circle-check"></i>&nbsp CHECK PRIVARCY
             POLICIES
           </button></a

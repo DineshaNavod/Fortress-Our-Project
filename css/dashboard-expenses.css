@@ -1,0 +1,611 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #e0e9f0;
+}
+
+header {
+  height: 150px;
+  margin-bottom: 100px;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+nav {
+  height: 150px;
+  background-color: rgba(33, 28, 132, 0.9);
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 10px;
+}
+
+.nav-ul li {
+  font-family: Arial;
+  text-decoration: none;
+  list-style: none;
+  font-size: 13px;
+}
+
+.nv-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0px;
+}
+
+.nv-link:hover {
+  color: #00ebe7;
+  transition: 0.2s;
+}
+
+.nv-link:active {
+  color: #00ebe7;
+}
+
+nav a.active {
+  position: relative;
+  color: #00ebe7;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #00ebe7;
+  border-radius: 2px;
+}
+
+.text-onhero {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100px;
+  font-style: normal;
+  font-size: 70px;
+  letter-spacing: 02px;
+  text-align: center;
+  padding-top: 130px;
+  text-shadow: 2px 2px 4px #111111;
+}
+
+.p-hero {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  line-height: 6mm;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 3px solid #00ebe7;
+  border-radius: 50px;
+  background-color: transparent;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(49, 49, 49, 0.2),
+    0 6px 20px 0 rgba(58, 58, 58, 0.19);
+}
+
+.btn:hover {
+  background-color: #00ebe7;
+  color: white;
+  transition: 0.2s;
+}
+
+/* End Heder Section */
+
+.container {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(160, 160, 160, 0.2),
+    0 6px 20px 0 rgba(145, 145, 145, 0.2);
+}
+
+.horizental-blank-space {
+  height: 80px;
+}
+
+.flex-inside-nav {
+  display: flex;
+}
+
+.blank-space {
+  width: 10px;
+  height: 50px;
+}
+
+.nagativation-vertical-bar {
+  width: 450px;
+  height: 630px;
+  background-color: #ffffff;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: 0.3s;
+  padding: 0px;
+  margin: 0px;
+}
+
+.white-page {
+  width: 100%;
+  height: 630px;
+  background-color: #ecf1f4;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-image: url(../img/Goal-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container ul {
+  list-style: none;
+  width: 77.5%;
+}
+
+.container li {
+  padding-left: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+  width: 90%;
+  transition: 0.1s;
+}
+
+.container li:hover {
+  background-color: rgba(27, 102, 123, 0.1);
+  transition: 0.1s;
+}
+
+.container li:hover a,
+.container li:hover .title {
+  color: #076984 !important;
+}
+
+.container li:hover a,
+.container li:hover .icon {
+  color: #076984 !important;
+}
+
+.container li:hover a {
+  color: blue;
+}
+
+.title {
+  color: #6e8999;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.container ul li a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+}
+
+.icon {
+  color: #6e8999;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  scale: 1.02;
+  transition: 0.3s;
+}
+
+/* White Space Content  */
+
+.welcome-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+.wellcome-text-h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100px;
+  font-style: normal;
+  color: #211c84d7;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 29px;
+}
+
+.wellcome-text-p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 2px;
+  margin-left: 20px;
+  color: #076984af;
+}
+
+.share-icon {
+  width: 50px;
+  padding-left: 15px;
+}
+
+/* Start Here  */
+
+.top-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.budget-section {
+  height: 180px;
+  width: 350px;
+  background-color: white;
+  margin-left: 40px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(203, 203, 203, 0.2),
+    0 6px 20px 0 rgba(177, 177, 177, 0.19);
+}
+
+.budget-section-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100px;
+  font-style: normal;
+  font-size: 19px;
+  padding-left: 30px;
+  padding-top: 20px;
+  color: #211c84d7;
+}
+
+#budgetAmount {
+  padding: 8px 20px;
+  margin-left: 30px;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.input-section {
+  position: relative;
+  height: 180px;
+  width: 570px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(203, 203, 203, 0.2),
+    0 6px 20px 0 rgba(177, 177, 177, 0.19);
+}
+
+.input {
+  margin-bottom: 30px;
+}
+
+#expenseName {
+  padding: 8px 20px;
+}
+
+#expenseCategory {
+  padding: 8px 20px;
+}
+
+.expense-Name {
+  padding-left: 30px;
+}
+
+#expenseValue {
+  padding: 8px 20px;
+  margin-top: 20px;
+}
+
+.Expenses-btn {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: #076984c4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Additional Add Js Visible Part  */
+
+.tracker-list {
+  list-style: none;
+  padding: 0;
+  grid-column: 1 / 2;
+  margin-top: 40px;
+  /* Occupy the first column */
+}
+
+.tracker-list li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 20px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+}
+
+.tracker-item-details {
+  flex-grow: 1;
+}
+
+.tracker-item-actions button {
+  background-color: #076984c4;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.tracker-item-actions button:hover {
+  background-color: #c9302c;
+}
+
+.empty-message {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  grid-column: 1 / 2;
+}
+
+.white-page {
+  position: relative;
+}
+
+#reset-app {
+  position: absolute;
+  top: 150px;
+  right: 70px;
+  padding: 10px 20px;
+  background-color: #076984c4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.balance-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #076984c4;
+  border-radius: 4px;
+  border: 1px solid #d4edda;
+  text-align: center;
+  font-weight: bold;
+  grid-column: 1 / 3;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: none;
+}
+
+.balance-positive {
+  color: green;
+}
+
+.balance-negative {
+  color: red;
+}
+
+.balance-neutral {
+  color: #333;
+}
+
+.white-page {
+  position: relative;
+}
+.pie-chart {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(203, 203, 203, 0.2),
+    0 6px 20px 0 rgba(177, 177, 177, 0.19);
+  padding: 30px;
+  border-radius: 8px;
+  position: absolute;
+  top: 350px;
+  right: 50px;
+}
+
+#chartContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2 / 3;
+  /* Occupy the second column */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#expensePieChart {
+  max-width: 100%;
+  max-height: 200px;
+  margin-bottom: 20px;
+}
+
+/* End Here  */
+
+/* footer */
+
+footer {
+  height: 550px;
+  background-color: #211c84;
+  margin-top: 80px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-main-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-main-flex {
+  padding-top: 80px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+}
+
+.footer-flex-h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Poppins", sans-serif;
+  font-weight: 100px;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.footer-main-flex ul {
+  list-style: none;
+}
+
+.footer-main-flex li {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.footer-flex-f-li {
+  padding-top: 20px !important;
+}
+
+.footer-logo {
+  width: 160px;
+  padding-left: 30px;
+  margin-top: -20px;
+}
+
+.footer-logo-phone {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-logo-phone span {
+  font-size: 21x;
+}
+
+.footer-phone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.font-awesome-footer {
+  color: white;
+  font-size: 15px;
+}
+
+.footer-email {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  gap: 15px;
+}
+
+.footer-p1 {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: arial;
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.footer-hr {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 2px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.copyright-design {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.footer-blackarea {
+  background-color: black;
+  height: 150px;
+}
+
+.footer-p2 {
+  color: white;
+  font-family: arial;
+  font-size: 16px;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+}
+
+.footer-btn {
+  padding: 10px 20px;
+  background-color: #00ebe7;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background-color: #6af3f0;
+}
+
+.footer-btn-link:link {
+  padding-left: 40px;
+}

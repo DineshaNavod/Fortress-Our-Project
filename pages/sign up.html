@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Fortree Asset Management</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/login.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/tab-icon.png" type="x-icon" />
+  </head>
+  <body>
+    <div class="signup">
+      <form
+        action="login.html"
+        method="post"
+        target="_blank"
+        enctype="application/x-www-form-urlencoded"
+      >
+        <h1>Sign Up</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" name="fullname" required />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="email" placeholder="Email" name="email" required />
+          <i class="bx bxs-envelope"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+            minlength="7"
+          />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="confirm-password"
+            minlength="7"
+            required
+          />
+          <i class="bx bxs-lock"></i>
+        </div>
+        <div class="remember">
+          <label
+            ><input type="checkbox" name="terms" required />I agree to terms &
+            conditions</label
+          >
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <div class="register-link">
+          <p>Already have an account? <a href="./login.html">Sign In</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

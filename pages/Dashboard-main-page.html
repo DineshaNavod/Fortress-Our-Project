@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Fortree Asset Management</title>
+    <link rel="stylesheet" href="../css/dashboard-main-page.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="shortcut icon" href="../img/tab-icon.png" type="x-icon" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script/nav-a.js"></script>
+    <script src="../script/massage.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <center>
+          <img
+            src="../img/Logo.png"
+            alt="Foretess Brand Logo"
+            width="100px"
+            height="auto"
+            id="logo"
+          />
+
+          <!-- Links -->
+          <ul class="nav-ul">
+            <li><a href="../index.html" class="nv-link">HOME</a></li>
+            <li>
+              <a href="../pages/Service.html" class="nv-link">SERVICES</a>
+            </li>
+            <li>
+              <a href="../pages/Dashboard-main-page.html" class="nv-link"
+                >DASHBOARD</a
+              >
+            </li>
+            <li>
+              <a href="../pages/contact.html" class="nv-link">CONTACT US</a>
+            </li>
+            <li>
+              <a href="../pages/about as.html" class="nv-link">ABOUT US</a>
+            </li>
+          </ul>
+        </center>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="nagativation-vertical-bar">
+        <div class="horizental-blank-space"></div>
+        <div class="flex-inside-nav">
+          <div class="blank-space"></div>
+
+          <ul class="nav-links">
+            <li>
+              <a href="./Dashboard-main-page.html">
+                <span class="icon"
+                  ><ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="title">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/income_vs_expenses.html">
+                <span class="icon"
+                  ><ion-icon name="cash-outline"></ion-icon
+                ></span>
+                <span class="title">Income VS Expenses</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/expenses.html">
+                <span class="icon"
+                  ><ion-icon name="pie-chart-outline"></ion-icon
+                ></span>
+                <span class="title">Expenses</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/goal2.html">
+                <span class="icon"
+                  ><ion-icon name="golf-outline"></ion-icon
+                ></span>
+                <span class="title">Goal</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="massage()">
+                <span class="icon"
+                  ><ion-icon name="chatbubble-outline"></ion-icon
+                ></span>
+                <span class="title">Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/Privacy policy.html">
+                <span class="icon"
+                  ><ion-icon name="help-outline"></ion-icon
+                ></span>
+                <span class="title">Help</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="seting()">
+                <span class="icon"
+                  ><ion-icon name="settings-outline"></ion-icon
+                ></span>
+                <span class="title">Setting</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/forgot.html">
+                <span class="icon"
+                  ><ion-icon name="lock-closed-outline"></ion-icon
+                ></span>
+                <span class="title">Password</span>
+              </a>
+            </li>
+            <li>
+              <a href="../pages/sign up.html">
+                <span class="icon"
+                  ><ion-icon name="exit-outline"></ion-icon
+                ></span>
+                <span class="title">Sign Out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="white-page">
+        <div class="welcome-flex">
+          <div class="wellcome-text">
+            <h3 class="wellcome-text-h3">Welcome to Fortress</h3>
+            <p class="wellcome-text-p">Hi,DanielPowel. Welcome Back</p>
+          </div>
+
+          <div class="logo-users">
+            <img src="../img/share-icon.png" alt="share" class="share-icon" />
+            <img
+              src="../img/notification-icon.png"
+              alt="Notification"
+              class="share-icon"
+            />
+            <img src="../img/user.png" alt="Logo" class="share-icon" />
+          </div>
+        </div>
+
+        <div class="debit-section">
+          <h3 class="debit-section-h3">Add Debit Card</h3>
+          <div class="debit-section-flex">
+            <div>
+              <img
+                src="../img/world-debit-card.png"
+                alt="Card"
+                class="debit-section-flex-img1"
+              />
+            </div>
+            <div class="add-debit">
+              <img
+                src="../img/crd.png"
+                alt="Card"
+                class="debit-section-flex-img2"
+              />
+              <p class="debit-p">Add Debit Card</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="first">
+          <p class="first-text">Your Total Balance</p>
+          <h1 class="first-balance" id="displayBudget">0</h1>
+          <p class="first-date">December 21, 2025 . 02.20p.m</p>
+          <div class="first-logo">
+            <img src="../img/SHARE.png" alt="image" class="first-share-image" />
+            <img src="../img/TOPUP.png" alt="image" class="first-top-image" />
+            <img src="../img/MORE.png" alt="image" class="first-more-image" />
+          </div>
+        </div>
+
+        <div class="second">
+          <h3 class="second-text">Quick Tips to improve your savings</h3>
+          <div class="second-tips">
+            <div class="keep-account">
+              <img src="../img/913320.png" alt="image" class="keep-image" />
+              <h3 class="keep-h3">Keep Accounts!</h3>
+              <p class="keep-p">
+                Note Down what you get and what you spend. Always keep a clean
+                record of where your money is going
+              </p>
+            </div>
+            <div class="goal">
+              <img src="../img/1654942.png" alt="image" class="keep-image" />
+              <h3 class="keep-h3">Know Your Goals</h3>
+              <p class="keep-p">
+                Define your future goals—this sets the foundation for your
+                financial plan. Save wisely to achieve them.
+              </p>
+            </div>
+            <div class="spend">
+              <img src="../img/10758868.png" alt="image" class="keep-image" />
+              <h3 class="keep-h3">Spend cautiously</h3>
+              <p class="keep-p">
+                Know the difference between needs and wants. Skip unnecessary
+                spending and save for your future goals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="third">
+          <p class="third-text">Expencess Instead</p>
+          <img src="../img/pOGRASS-bAR.png" alt="image" class="third-image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer create -->
+
+    <!-- Footer Flex Section -->
+    <footer>
+      <div class="footer-main-flex">
+        <div class="footer-flex1">
+          <ul>
+            <h3 class="footer-flex-h3">MAIN MENU</h3>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../index.html">Home</a>
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Service.html"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/about as.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/sign up.html"
+                >Become a Client</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-flex2">
+          <ul>
+            <h3 class="footer-flex-h3">LEGALS</h3>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Policies</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Service.html"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Fair Customer Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-flex3">
+          <ul>
+            <h3 class="footer-flex-h3">WEBSITE</h3>
+            <li class="footer-flex-f-li">
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Website Terms</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              &#10148;&nbsp;&nbsp;&nbsp;<a href="../pages/Privacy policy.html"
+                >Cookies</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-flex4">
+          <img src="../img/Logo.png" alt="Logo" class="footer-logo" />
+
+          <div class="footer-phone">
+            <span class="font-awesome-footer"
+              ><i class="fa-solid fa-phone"></i
+            ></span>
+            <p class="footer-logo-phone">Phone: +1 (123) 456-7890</p>
+          </div>
+
+          <div class="footer-email">
+            <span class="font-awesome-footer"
+              ><i class="fa-solid fa-envelope"></i
+            ></span>
+            <p class="footer-logo-phone">Email: support@yourcompany.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pargraph Under The Flex Section  -->
+
+      <p class="footer-p1">
+        Fortress Asset Management is dedicated to helping you take control of
+        your finances with security and ease. Our innovative platform empowers
+        you to track, manage, and grow your wealth confidently.
+      </p>
+      <hr class="footer-hr" />
+      <div class="copyright-design">
+        <h3 style="color: rgba(255, 255, 255, 0.8); font-size: 12px">
+          Copyright @2025 By FORTRESS
+        </h3>
+        <h3 style="color: rgba(255, 255, 255, 0.6); font-size: 12px">
+          Design by FORTRESS TEAM
+        </h3>
+      </div>
+      <div class="footer-blackarea">
+        <p class="footer-p2" style="font-size: 12px">
+          Partner with Fortress and turn your financial goals into reality<font
+            style="color: #00ebe7"
+            >—together, success is limitless!</font
+          >
+        </p>
+        <a href="../pages/Privacy policy.html" class="footer-btn-link"
+          ><button class="footer-btn" style="font-size: 12px">
+            <i class="fa-solid fa-circle-check"></i>&nbsp CHECK PRIVARCY
+            POLICIES
+          </button></a
+        >
+      </div>
+    </footer>
+
+    <script>
+      // Retrieve budget
+      const storedBudget = localStorage.getItem("budget");
+      let budget = storedBudget ? parseFloat(storedBudget) : 0; // Default to 0 if not found
+
+      // Retrieve expenses
+      const storedExpenses = localStorage.getItem("expenses");
+      let expenses = {}; // Initialize as an empty object
+      if (storedExpenses) {
+        try {
+          expenses = JSON.parse(storedExpenses) || {};
+        } catch (e) {
+          console.error("Error parsing expenses from local storage:", e);
+        }
+      }
+
+      // Display the retrieved data
+      const budgetDisplay = document.getElementById("displayBudget");
+      const expenseDisplay = document.getElementById("displayExpenses");
+
+      budgetDisplay.textContent = `${budget.toFixed(2)}`;
+
+      for (const category in expenses) {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${category}: ₹${expenses[category].toFixed(2)}`;
+        expenseDisplay.appendChild(listItem);
+      }
+    </script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+nav {
+  height: 150px;
+  background-color: rgba(33, 28, 132, 0.9);
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 10px;
+}
+
+.nav-ul li {
+  font-family: Arial;
+  text-decoration: none;
+  list-style: none;
+  font-size: 13px;
+}
+
+.nv-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0px;
+}
+
+.nv-link:hover {
+  color: #00ebe7;
+  transition: 0.2s;
+}
+
+.nv-link:active {
+  color: #00ebe7;
+}
+
+nav a.active {
+  position: relative;
+  color: #00ebe7;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #00ebe7;
+  border-radius: 2px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin: 50px;
+  padding: 0px 20px;
+}
+.pricing-table {
+  box-shadow: 0px 0px 18px #ccc;
+  text-align: center;
+  padding: 30px 0px;
+  border-radius: 5px;
+  position: relative;
+}
+.pricing-table .head {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 50px;
+  transition: all 0.5s ease;
+}
+.pricing-table:hover .head {
+  border-bottom: 1px solid #8e2de2;
+}
+
+.pricing-table .head .title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pricing-table .content .price {
+  background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  line-height: 90px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  margin-top: -50px;
+  transition: all 0.5s ease;
+}
+.pricing-table:hover .content .price {
+  transform: scale(1.2);
+}
+.pricing-table .content .price h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.pricing-table .content ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.pricing-table .content ul li {
+  margin: 20px 0px;
+  font-size: 14px;
+  color: #555;
+}
+
+.pricing-table .content .sign-up {
+  background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
+  border-radius: 40px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.pricing-table .btn {
+  color: #fff;
+  padding: 14px 40px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+  border: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  text-decoration: none;
+  margin: 2px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.pricing-table .btn:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-table .btn.bordered {
+  z-index: 50;
+  color: #333;
+}
+.pricing-table:hover .btn.bordered {
+  color: #fff !important;
+}
+
+.pricing-table .btn.bordered:after {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+  width: 100%;
+  z-index: -1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+.pricing-table:hover .btn.bordered:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* footer */
+
+/* footer */
+
+footer {
+  height: 550px;
+  background-color: #211c84;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-main-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-main-flex {
+  padding-top: 80px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+}
+
+.footer-flex-h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Poppins", sans-serif;
+  font-weight: 100px;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.footer-main-flex ul {
+  list-style: none;
+}
+
+.footer-main-flex li {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.footer-flex-f-li {
+  padding-top: 20px !important;
+}
+
+.footer-logo {
+  width: 160px;
+  padding-left: 30px;
+  margin-top: -20px;
+}
+
+.footer-logo-phone {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-logo-phone span {
+  font-size: 21x;
+}
+
+.footer-phone {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.font-awesome-footer {
+  color: white;
+  font-size: 15px;
+}
+
+.footer-email {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  gap: 15px;
+}
+
+.footer-p1 {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: arial;
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.footer-hr {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 2px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.copyright-design {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.footer-blackarea {
+  background-color: black;
+  height: 150px;
+}
+
+.footer-p2 {
+  color: white;
+  font-family: arial;
+  font-size: 16px;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+}
+
+.footer-btn {
+  padding: 10px 20px;
+  background-color: #00ebe7;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background-color: #6af3f0;
+}
+
+.footer-btn-link:link {
+  padding-left: 40px;
+}

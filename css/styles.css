@@ -50,6 +50,22 @@ nav {
   color: #00ebe7;
 }
 
+nav a.active {
+  position: relative;
+  color: #00ebe7;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #00ebe7;
+  border-radius: 2px;
+}
+
 .text-onhero {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -501,7 +517,7 @@ nav {
   height: auto;
   position: absolute;
   top: -80px;
-  left: 1100px;
+  left: 950px;
 }
 
 /* footer */
@@ -509,6 +525,11 @@ nav {
 footer {
   height: 550px;
   background-color: #211c84;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer-main-flex {
